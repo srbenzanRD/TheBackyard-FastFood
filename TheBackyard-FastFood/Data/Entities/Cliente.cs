@@ -4,13 +4,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TheBackyard_FastFood.Data.Entities
 {
-    public class Usuario
+    public class Cliente
     {
         [Key]
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string UserName { get; set; }
-        public string Email { get; set; }
-        public string Contrasena { get; set; }
+        public string Cedula { get; set; }
+        public string Direccion { get; set; }
+        public string Correo { get; set; }
+
+        public ICollection<Pedidos> Pedidos { get; set; }
     }
 }
