@@ -1,6 +1,6 @@
 ﻿namespace TheBackyard_FastFood.Data.Context
 {
-    public class DbContext
+    public class TbyDbContext
     {
     }
 }
