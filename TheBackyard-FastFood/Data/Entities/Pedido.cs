@@ -16,7 +16,8 @@ namespace TheBackyard_FastFood.Data.Entities
 
         public string DireccionDeEntrega { get; set; }
 
-        public int TipoEntregaId
+        public int TipoEntregaId { get; set; }
+
         [ForeignKey("TipoEntregaId")]
         public TipoEntrega TipoEntrega { get; set; }
 
@@ -37,7 +38,7 @@ namespace TheBackyard_FastFood.Data.Entities
         public Pedido Pedido { get; set; }
         
         [ForeignKey("ServicioId")]
-        public Servicios Servicio { get; set; }
+        public Servicio Servicio { get; set; }
     }
 
     public class TipoEntrega

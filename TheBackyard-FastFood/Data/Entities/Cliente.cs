@@ -13,6 +13,6 @@ namespace TheBackyard_FastFood.Data.Entities
         public string Direccion { get; set; }
         public string Correo { get; set; }
 
-        public ICollection<Pedidos> Pedidos { get; set; }
+        public ICollection<Pedido> Pedidos { get; set; }
     }
 }
